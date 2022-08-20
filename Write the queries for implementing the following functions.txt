@@ -1,0 +1,21 @@
+
+a)MAX
+
+SELECT MAX(Salary) FROM emp;
+
+b)MIN
+
+SELECT MIN(Salary)FROM emp;
+
+c)AVG
+
+SELECT AVG(SALARY) "AVERAGE SAL" FROM emp;
+
+d)COUNT
+
+SELECT COUNT(*) FROM emp; 
+
+e)SUM
+
+SELECT SUM(Salary) "Total Salary" from emp;	
+

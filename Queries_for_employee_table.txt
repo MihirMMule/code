@@ -1,0 +1,46 @@
+1)Display all the fields of empolyee table.
+
+SELECT column_DEPT
+FROM employee;
+
+2)Retrive employee number and their salary.
+
+select empno,salary from employee;
+
+3) Retrive average salary of all employee
+
+SELECT AVG(salary), COUNT(*) 
+     FROM employee;
+
+4)Retrive number of employee
+
+select empno from employee;
+
+5)Retrive distinct number of employee
+
+select distinct empno from employee;
+
+6) Retrive total salary of employee group by employee name and count similar names.
+
+SELECT EMP_NAME, SUM(SALARY),COUNT(*) FROM EMPLOYEE
+GROUP BY(EMP_NAME);
+
+7)Retrive total salary of employee which is greater than > 12000
+
+SELECT EMP_NAME, SUM(SALARY) FROM EMPLOYEE 
+GROUP BY(EMP_NAME)
+HAVING SUM(SALARY)>120000
+
+
+8)Display name of employee in descending order.
+
+select emp_name from employee
+order by emp_name desc;
+
+9)Display details of employee whoose name is AMIT and salary greater than 50000.
+
+select * from employee
+where emp_name='Amit' and salary>50000
+
+
+

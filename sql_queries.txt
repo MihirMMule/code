@@ -1,0 +1,16 @@
+
+
+i) Find the names of the parts supplied by “RamRaj”
+
+select pname from parts where sname = 'RamRaj';
+
+ii) Find the names of the suppliers who supply “Nuts”
+
+select sname from suppliers su, supplies sp, parts p
+where su.sid = sp.sid and p.pid = sp.pid and pname = ‘nuts’;
+
+
+iii) Find the cost of bolts being supplied by Nagpur suppliers.
+
+select from supplier.city = 'nagpur'
+where parts.pname,supply.cost;
